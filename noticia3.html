@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícia 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+
+    <div class=" w-full max-w-7xl">
+        <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl p-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+            <div class="flex flex-row items-center justify-between lg:justify-start">
+                <a class="text-lg font-bold tracking-tighter text-blue-600 transition duration-500 ease-in-out transform tracking-relaxed lg:pr-8" href="index.html"> INFOIA </a>
+                <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-8 h-8">
+                        <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" style="display: none"></path>
+                    </svg>
+                </button>
+            </div>
+    
+            <nav :class="{'flex': open, 'hidden': !open}" class="flex-col items-center flex-grow hidden pb-4 border-blue-600 md:pb-0 md:flex md:justify-end md:flex-row lg:border-l-2 lg:pl-2">
+                <a class="px-4 py-2 mt-2 text-sm text-gray-500 md:mt-0 hover:text-blue-600 focus:outline-none focus:shadow-outline" href="index.html#noticias">Notícias</a>
+                <a class="px-4 py-2 mt-2 text-sm text-gray-500 md:mt-0 hover:text-blue-600 focus:outline-none focus:shadow-outline" href="index.html#eventos">Eventos</a>
+                <a class="px-4 py-2 mt-2 text-sm text-gray-500 md:mt-0 hover:text-blue-600 focus:outline-none focus:shadow-outline" href="index.html#livros">Livros</a>
+                <a class="px-4 py-2 mt-2 text-sm text-gray-500 md:mt-0 hover:text-blue-600 focus:outline-none focus:shadow-outline" href="index.html#empresas">Empresas</a>
+                <a class="px-4 py-2 mt-2 text-sm text-gray-500 md:mt-0 hover:text-blue-600 focus:outline-none focus:shadow-outline" href="index.html#imagens">Imagens</a>
+    
+                <div class="inline-flex items-center gap-2 list-none lg:ml-auto">
+                    <a href="login.html">
+                    <button class="items-center block px-10 py-2.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Entrar</button></a>
+                    <a href="registro.html">
+                    <button class="items-center block px-10 py-3 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-600 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Registrar</button></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+    <!-- Blog Article -->
+<div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
+    <div class="grid lg:grid-cols-3 gap-y-8 lg:gap-y-0 lg:gap-x-6 lg:gap-x-12">
+      <!-- Content -->
+      <div class="lg:col-span-2">
+        <div class="py-4 lg:pe-4 lg:pe-8">
+          <div class="space-y-4 lg:space-y-4">
+            <h2 class="text-3xl font-bold lg:text-4xl lg:text-5xl">
+                Spotify usará inteligência artificial para traduzir podcasts 
+            </h2>
+  
+            <div class="flex items-center gap-x-2">
+              <p class="text-xs sm:text-sm text-gray-800">10/10/2010</p>
+            </div>
+  
+            <p class="text-lg text-gray-800">O aplicativo de streaming de aúdio Spotify lançou um programa piloto limitado que usa inteligência artificial para traduzir automaticamente podcasts em vários idiomas, usando tecnologia de síntese de voz da OpenAI para preservar a voz original do locutor.</p>
+  
+            <p class="text-lg text-gray-800">Dentre as revoluções provindas das IAs, a identificação e tradução automática já está cada vez mais presente.</p>
+  
+            <div class="text-center">
+              <div class="">
+                <div class="grid grid-cols-2 lg:grid-cols-1 gap-3">
+                  <figure class="relative w-full h-60">
+                    <img class="w-full h-full absolute top-0 start-0 object-cover rounded-xl shadow-lg" src="pdc.webp" alt="Image Description">
+                  </figure>
+                </div>
+              </div>
+  
+            </div>
+  
+            <p class="text-lg text-gray-800">O recurso visa oferecer uma experiência auditiva mais autêntica em comparação à dublagem tradicional. Mas também poderia introduzir erros de linguagem que são difíceis de detectar pelos falantes não nativos, uma vez que a tradução automática está longe de ser uma tecnologia perfeita.</p>
+  
+            <p class="text-lg text-gray-800">o comunicado em que o Spotify apresenta seu 'Voice Translation', diz que o sistema pode traduzir vozes inglesas para espanhol, francês e alemão, mantendo as características vocais distintas do locutor. O recurso está sendo usado atualmente apenas com podcasters selecionados, como Dax Shepard, Monica Padman, Lex Fridman, Bill Simmons e Steven Bartlett.</p>
+  
+            <blockquote class="text-center">
+              <p class="text-xl font-medium text-gray-800 lg:text-2xl lg:leading-normal xl:text-2xl xl:leading-normal italic">
+                "Acreditamos que uma abordagem cuidadosa à IA pode ajudar a construir conexões mais profundas entre ouvintes e criadores, um componente-chave da missão do Spotify de desbloquear o potencial da criatividade humana."
+              </p>
+              <p class="mt-1 text-gray-800">
+                Ziad Sultan, vice-presidente de personalização do Spotify.
+              </p>
+            </blockquote>
+  
+            <figure>
+              <img class="w-full object-cover rounded-xl shadow-lg" src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/02/Design-sem-nome-47.png?w=1220&h=674&crop=1" alt="Image Description">
+            </figure>
+  
+            <div class="space-y-1">
+              <h4 class="text-4xl font-semibold">Disponível para todos os usuários</h4>
+  
+              <p class="text-lg text-gray-800">O Spotify afirma que os episódios traduzidos estarão disponíveis em todo o mundo para usuários Premium e Gratuitos. Os usuários podem acessar as traduções através do “Now Playing View” do Spotify para episódios suportados ou um Voice Translations Hub dedicado que continuará a adicionar mais conteúdo traduzido.</p>
+            </div>
+  
+            <div class="grid lg:flex lg:justify-between lg:items-center gap-y-5 lg:gap-y-0">
+              <!-- Badges/Tags -->
+              <div>
+                <a class="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-800 text-gray-100 hover:bg-blue-700" href="#">
+                  Podcasts
+                </a>
+                <a class="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-800 text-gray-100 hover:bg-blue-700" href="#">
+                  Spotify
+                </a>
+                <a class="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-800 text-gray-100 hover:bg-blue-700" href="#">
+                  IA
+                </a>
+                <a class="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-800 text-gray-100 hover:bg-blue-700" href="https://www.convergenciadigital.com.br/Inovacao/Spotify-comeca-a-usar-inteligencia-artificial-para-traduzir-podcasts-64357.html?UserActiveTemplate=mobile">
+                  Referências
+                </a>
+              </div>
+              <!-- End Badges/Tags -->
+  
+              <div class="flex justify-end items-center gap-x-1.5">
+                <!-- Button -->
+                <div class="hs-tooltip inline-block">
+                  <button type="button" class="hs-tooltip-toggle flex items-center gap-x-2 text-sm text-gray-800 hover:text-red-600">
+                    <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                    3.7k
+                    <span class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded shadow-sm dark:bg-black" role="tooltip">
+                      Like
+                    </span>
+                  </button>
+                </div>
+                <!-- Button -->
+  
+                <div class="block h-3 border-e border-gray-300 mx-3 dark:border-gray-600"></div>
+  
+                <!-- Button -->
+                <div class="hs-tooltip inline-block">
+                  <button type="button" class="hs-tooltip-toggle flex items-center gap-x-2 text-sm text-gray-800 hover:text-green-600">
+                    <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
+                    48
+                    <span class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded shadow-sm dark:bg-black" role="tooltip">
+                      Comment
+                    </span>
+                  </button>
+                </div>
+                <!-- Button -->
+  
+                <div class="block h-3 border-e border-gray-300 mx-3 dark:border-gray-600"></div>
+  
+                <!-- Button -->
+                <div class="hs-dropdown relative inline-flex">
+                  <button type="button" id="blog-article-share-dropdown" class="hs-dropdown-toggle flex items-center gap-x-2 text-sm text-gray-800 hover:text-blue-500">
+                    <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" x2="12" y1="2" y2="15"/></svg>
+                    Compartilhar
+                  </button>
+                  <div class="hs-dropdown-menu w-56 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden mb-1 z-10 bg-gray-900 shadow-md rounded-xl p-2 dark:bg-black" aria-labelledby="blog-article-share-dropdown">
+                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-gray-400" href="#">
+                      <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                      Copy link
+                    </a>
+                    <div class="border-t border-gray-600 my-2"></div>
+                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-gray-400" href="#">
+                      <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                      </svg>
+                      Share on Twitter
+                    </a>
+                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-gray-400" href="#">
+                      <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                      </svg>
+                      Share on Facebook
+                    </a>
+                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-gray-400" href="#">
+                      <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                      </svg>
+                      Share on LinkedIn
+                    </a>
+                  </div>
+                </div>
+                <!-- Button -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Content -->
+  
+<!-- lg:bg-gradient-to-r lg:from-gray-50 lg:via-transparent lg:to-transparent dark:from-slate-800 -->
+
+      <!-- Sidebar -->
+      <div style="height: 28rem;" class="lg:col-span-1 lg:w-full lg:h-full border-2 border-gray-600 rounded-lg">
+        <div class="top-0 start-0 py-8 px-8 lg:ps-4 lg:ps-8">
+          <!-- Avatar Media -->
+          <div class="group flex items-center gap-x-3 border-b border-gray-800 pb-4 mb-4">
+            <a class="block flex-shrink-0" href="#">
+              <img class="h-10 w-10 rounded-full" src="https://cdn.iconscout.com/icon/free/png-512/free-spotify-11-432546.png?f=webp&w=512" alt="Image Description">
+            </a>
+  
+            <a class="group grow block" href="">
+              <h4 class="group-hover:text-blue-500 text-md font-semibold text-gray-800">
+                Spotify
+              </h4>
+            </a>
+  
+            <div class="grow">
+              <div class="flex justify-end px-6">
+                <button type="button" class="py-1.5 px-2.5 inline-flex items-center gap-x-2 text-xs font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                  <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" x2="19" y1="8" y2="14"/><line x1="22" x2="16" y1="11" y2="11"/></svg>
+                  <a href="https://open.spotify.com/intl-pt">Detalhes</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End Avatar Media -->
+  
+          <div class="space-y-6">
+            <!-- Media -->
+            <a class="group flex items-center gap-x-6 px-6" href="#">
+              <div class="grow">
+                <span class="text-sm font-bold text-gray-600 group-hover:text-blue-500">
+                  Guia de Estudo para Python utilizando o ChatGPT
+                </span>
+              </div>
+  
+              <div class="flex-shrink-0 relative rounded-lg overflow-hidden w-20 h-20">
+                <img class="w-full h-full absolute top-0 start-0 object-cover rounded-lg shadow-lg" src="a3.png" alt="Image Description">
+              </div>
+            </a>
+            <!-- End Media -->
+  
+            <!-- Media -->
+            <a class="group flex items-center gap-x-6 px-6" href="#">
+              <div class="grow">
+                <span class="text-sm font-bold text-gray-600 group-hover:text-blue-500">
+                  If your UX Portfolio has this 20% Well Done, it Will Give You an 80% Result
+                </span>
+              </div>
+  
+              <div class="flex-shrink-0 relative rounded-lg overflow-hidden w-20 h-20">
+                <img class="w-full h-full absolute top-0 start-0 object-cover rounded-lg shadow-2xl" src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="Image Description">
+              </div>
+            </a>
+            <!-- End Media -->
+  
+            <!-- Media -->
+            <a class="group flex items-center gap-x-6 px-6" href="noticia1.html">
+              <div class="grow">
+                <span class="text-sm font-bold text-gray-600 group-hover:text-blue-500">
+                  Por que ter medo de IA?
+                </span>
+              </div>
+  
+              <div class="flex-shrink-0 relative rounded-lg overflow-hidden w-20 h-20">
+                <img class="w-full h-full absolute top-0 start-0 object-cover rounded-lg shadow-lg" src="ia222.jpeg" alt="Image Description">
+              </div>
+            </a>
+            <!-- End Media -->
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+    </div>
+  </div>
+  <!-- End Blog Article -->
+
+
+
+
+
+  <footer class="bg-white">
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center m-4">2023. <a href="#" class="hover:underline">INFOIA</a>. Todos os direitos reservados.
+          </span>
+          <div class="flex mt- mr-4 sm:justify-center sm:mt-0">
+              <a href="#" class="text-gray-500 hover:text-gray-900">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                        <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                    </svg>
+                  <span class="sr-only">Facebook page</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+                        <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
+                    </svg>
+                  <span class="sr-only">Discord community</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                    <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                </svg>
+                  <span class="sr-only">Twitter page</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                  </svg>
+                  <span class="sr-only">GitHub account</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
+                </svg>
+                  <span class="sr-only">Dribbble account</span>
+              </a>
+          </div>
+      </div>
+    </div>
+</footer>
+
+  
+
+
+
+</body>
+</html>
